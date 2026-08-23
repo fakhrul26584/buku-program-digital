@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Buku Program Digital</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+/* NAVIGATION */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 20, 45, 0.92);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 60px;
+    color: white;
+
+    background:
+        radial-gradient(circle at top left, #2948ff, transparent 40%),
+        radial-gradient(circle at bottom right, #ff3d81, transparent 40%),
+        linear-gradient(135deg, #07152f, #101c46);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.flag {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero small {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: .8;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 8vw, 85px);
+    line-height: 1;
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: .9;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: white;
+    color: #10204b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+/* SECTIONS */
+section {
+    padding: 90px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #5168ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+/* COUNTDOWN */
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.time-box {
+    background: white;
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.time-box strong {
+    display: block;
+    font-size: 35px;
+    color: #5168ff;
+}
+
+.time-box span {
+    font-size: 12px;
+    color: #777;
+}
+
+/* INFO CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(0,0,0,.07);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* TENTATIF */
+.schedule {
+    max-width: 850px;
+    margin: auto;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    background: white;
+    padding: 22px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.time {
+    font-weight: bold;
+    color: #5168ff;
+}
+
+/* COMMITTEE */
+.committee {
+    max-width: 900px;
+    margin: auto;
+}
+
+.person {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+/* FOOTER */
+footer {
+    background: #07152f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer p {
+    opacity: .7;
+    margin-top: 10px;
+}
+
+/* MOBILE */
+@media(max-width: 700px) {
+
+    nav {
+        padding: 14px 20px;
+    }
+
+    nav div:last-child {
+        display: none;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .person {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">📖 BUKU PROGRAM</div>
+
+    <div>
+        <a href="#utama">Utama</a>
+        <a href="#program">Program</a>
+        <a href="#tentatif">Tentatif</a>
+        <a href="#ajk">AJK</a>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero" id="utama">
+
+    <div class="hero-content">
+
+        <div class="flag">🇲🇾</div>
+
+        <small>SK Sungai Isap Murni</small>
+
+        <h1>
+            SAMBUTAN<br>
+            BULAN KEBANGSAAN
+        </h1>
+
+        <p>
+            Buku Program Digital 2026
+        </p>
+
+        <a href="#program" class="btn">
+            TEROKAI PROGRAM ↓
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- PROGRAM -->
+<section id="program">
+
+    <div class="section-title">
+        <span>PROGRAM</span>
+        <h2>Tentang Program</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🇲🇾</div>
+            <h3>Semangat Patriotik</h3>
+            <p>
+                Memupuk semangat cintakan negara dan menghargai
+                kemerdekaan Malaysia.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎉</div>
+            <h3>Aktiviti Menarik</h3>
+            <p>
+                Pelbagai aktiviti dan pertandingan disediakan
+                untuk murid sepanjang program.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏫</div>
+            <h3>Warga Sekolah</h3>
+            <p>
+                Melibatkan murid, guru dan seluruh warga
+                SK Sungai Isap Murni.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COUNTDOWN -->
+<section>
+
+    <div class="section-title">
+        <span>COUNTDOWN</span>
+        <h2>Menuju Hari Program</h2>
+    </div>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <strong id="days">00</strong>
+            <span>HARI</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="hours">00</strong>
+            <span>JAM</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="minutes">00</strong>
+            <span>MINIT</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="seconds">00</strong>
+            <span>SAAT</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TENTATIF -->
+<section id="tentatif">
+
+    <div class="section-title">
+        <span>JADUAL PROGRAM</span>
+        <h2>Tentatif</h2>
+    </div>
+
+    <div class="schedule">
+
+        <div class="item">
+            <div class="time">7:30 PAGI</div>
+            <div>
+                <strong>Perhimpunan Murid</strong>
+                <p>Semua murid berkumpul di tapak perhimpunan.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="time">8:00 PAGI</div>
+            <div>
+                <strong>Nyanyian Lagu Patriotik</strong>
+                <p>Negaraku dan lagu-lagu patriotik.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="time">8:30 PAGI</div>
+            <div>
+                <strong>Ucapan Perasmian</strong>
+                <p>Ucapan Guru Besar dan perasmian program.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="time">9:00 PAGI</div>
+            <div>
+                <strong>Aktiviti & Pertandingan</strong>
+                <p>Pelbagai aktiviti untuk murid.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="time">12:00 TGH</div>
+            <div>
+                <strong>Majlis Penutup</strong>
+                <p>Penyampaian hadiah dan sesi bergambar.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AJK -->
+<section id="ajk">
+
+    <div class="section-title">
+        <span>PENGURUSAN PROGRAM</span>
+        <h2>Jawatankuasa</h2>
+    </div>
+
+    <div class="committee">
+
+        <div class="person">
+            <strong>Penasihat</strong>
+            <span>Guru Besar</span>
+        </div>
+
+        <div class="person">
+            <strong>Pengerusi</strong>
+            <span>PK Kokurikulum</span>
+        </div>
+
+        <div class="person">
+            <strong>Setiausaha</strong>
+            <span>Nama Guru</span>
+        </div>
+
+        <div class="person">
+            <strong>Bendahari</strong>
+            <span>Nama Guru</span>
+        </div>
+
+        <div class="person">
+            <strong>AJK Pelaksana</strong>
+            <span>Guru & Kakitangan</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h2>🇲🇾 MERDEKA!</h2>
+
+    <p>
+        SK Sungai Isap Murni · 2026
+    </p>
+
+    <p>
+        Buku Program Digital
+    </p>
+
+</footer>
+
+
+<!-- COUNTDOWN SCRIPT -->
+<script>
+
+const targetDate = new Date("August 31, 2026 08:00:00").getTime();
+
+setInterval(function() {
+
+    const now = new Date().getTime();
+
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    document.getElementById("days").innerText =
+        String(days).padStart(2, "0");
+
+    document.getElementById("hours").innerText =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("minutes").innerText =
+        String(minutes).padStart(2, "0");
+
+    document.getElementById("seconds").innerText =
+        String(seconds).padStart(2, "0");
+
+}, 1000);
+
+</script>
+
+</body>
+</html>
