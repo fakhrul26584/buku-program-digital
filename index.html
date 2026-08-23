@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ms">
-
 <head>
 
 <meta charset="UTF-8">
@@ -65,7 +64,6 @@ a{
     left:0;
     width:100%;
     height:70px;
-
     z-index:1000;
 
     display:flex;
@@ -75,7 +73,6 @@ a{
     padding:0 5%;
 
     background:rgba(4,39,24,.90);
-
     backdrop-filter:blur(15px);
 
     border-bottom:1px solid rgba(241,209,122,.25);
@@ -84,42 +81,33 @@ a{
 .nav-brand{
     display:flex;
     align-items:center;
-
     gap:12px;
 
     color:#f1d17a;
 
     font-family:Arial,sans-serif;
-
     font-size:13px;
-
     font-weight:bold;
-
     letter-spacing:1.5px;
 }
 
 .nav-brand img{
     width:45px;
     height:45px;
-
     object-fit:contain;
 }
 
 .nav-menu{
     display:flex;
-
     align-items:center;
-
-    gap:25px;
+    gap:22px;
 }
 
 .nav-menu a{
-    color:white;
+    color:#fff;
 
     font-family:Arial,sans-serif;
-
-    font-size:11px;
-
+    font-size:10px;
     font-weight:bold;
 
     transition:.3s;
@@ -138,13 +126,10 @@ a{
     min-height:100vh;
 
     position:relative;
-
     overflow:hidden;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     text-align:center;
@@ -152,38 +137,33 @@ a{
     padding:110px 20px 80px;
 
     background:
-
-    radial-gradient(
-        circle at 10% 30%,
-        rgba(241,209,122,.16),
-        transparent 24%
-    ),
-
-    radial-gradient(
-        circle at 90% 35%,
-        rgba(241,209,122,.14),
-        transparent 24%
-    ),
-
-    radial-gradient(
-        circle at 50% 48%,
-        rgba(35,117,71,.65),
-        transparent 45%
-    ),
-
-    linear-gradient(
-        135deg,
-        #06351f 0%,
-        #0b5b37 52%,
-        #032719 100%
-    );
+        radial-gradient(
+            circle at 10% 30%,
+            rgba(241,209,122,.16),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 90% 35%,
+            rgba(241,209,122,.14),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 50% 48%,
+            rgba(35,117,71,.65),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #06351f 0%,
+            #0b5b37 52%,
+            #032719 100%
+        );
 }
 
 .hero::before{
     content:"";
 
     position:absolute;
-
     inset:0;
 
     opacity:.06;
@@ -198,8 +178,6 @@ a{
         );
 
     background-size:85px 85px;
-
-    pointer-events:none;
 }
 
 .hero::after{
@@ -208,11 +186,9 @@ a{
     position:absolute;
 
     width:900px;
-
     height:250px;
 
     left:50%;
-
     bottom:-140px;
 
     transform:translateX(-50%);
@@ -226,33 +202,23 @@ a{
     border-radius:50%;
 }
 
-
-/* =========================================================
-   HERO FRAME
-========================================================= */
-
 .hero-frame{
     position:absolute;
-
     inset:72px 6% 25px;
 
     border-left:1px solid rgba(241,209,122,.28);
-
     border-right:1px solid rgba(241,209,122,.28);
-
-    pointer-events:none;
 }
 
 
 /* =========================================================
-   LANTERN
+   LANTERNS
 ========================================================= */
 
 .lantern{
     position:absolute;
 
     width:52px;
-
     height:72px;
 
     border:2px solid #c9a34c;
@@ -281,13 +247,11 @@ a{
     position:absolute;
 
     width:2px;
-
     height:90px;
 
     background:#c9a34c;
 
     left:50%;
-
     bottom:100%;
 
     transform:translateX(-50%);
@@ -301,7 +265,6 @@ a{
 .lantern.right{
     right:6%;
     top:220px;
-
     animation-delay:1.3s;
 }
 
@@ -314,7 +277,6 @@ a{
     50%{
         transform:translateY(15px) rotate(2deg);
     }
-
 }
 
 
@@ -326,7 +288,6 @@ a{
     position:absolute;
 
     width:5px;
-
     height:5px;
 
     border-radius:50%;
@@ -349,16 +310,13 @@ a{
 
     0%,100%{
         transform:translateY(0);
-
         opacity:.25;
     }
 
     50%{
         transform:translateY(-20px);
-
         opacity:1;
     }
-
 }
 
 
@@ -368,7 +326,6 @@ a{
 
 .hero-content{
     position:relative;
-
     z-index:10;
 
     width:min(1050px,100%);
@@ -376,7 +333,6 @@ a{
 
 .hero-logo{
     width:170px;
-
     height:170px;
 
     object-fit:contain;
@@ -401,7 +357,6 @@ a{
     50%{
         transform:translateY(-13px);
     }
-
 }
 
 .bismillah{
@@ -431,7 +386,6 @@ a{
 
 .gold-line{
     width:180px;
-
     height:2px;
 
     margin:10px auto 18px;
@@ -442,8 +396,6 @@ a{
         #f1d17a,
         transparent
     );
-
-    box-shadow:0 0 10px rgba(241,209,122,.5);
 }
 
 .hero h1{
@@ -489,7 +441,6 @@ a{
     padding:9px 28px;
 
     border-top:1px solid #f1d17a;
-
     border-bottom:1px solid #f1d17a;
 
     color:#f1d17a;
@@ -541,18 +492,13 @@ a{
     font-weight:bold;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,.3),
-        0 0 25px rgba(241,209,122,.25);
+        0 10px 30px rgba(0,0,0,.3);
 
     transition:.3s;
 }
 
 .hero-btn:hover{
     transform:translateY(-5px);
-
-    box-shadow:
-        0 15px 35px rgba(0,0,0,.35),
-        0 0 35px rgba(241,209,122,.45);
 }
 
 
@@ -644,7 +590,7 @@ a{
 
 
 /* =========================================================
-   GENERAL SECTIONS
+   GENERAL
 ========================================================= */
 
 section{
@@ -716,8 +662,6 @@ section{
 
 .glance-card:hover{
     transform:translateY(-6px);
-
-    box-shadow:0 18px 35px rgba(0,0,0,.10);
 }
 
 .glance-icon{
@@ -879,9 +823,6 @@ section{
     color:rgba(255,255,255,.82);
 }
 
-
-/* Competition stats */
-
 .competition-stats{
     max-width:850px;
 
@@ -925,9 +866,6 @@ section{
 
     opacity:.8;
 }
-
-
-/* Criteria */
 
 .criteria-box{
     max-width:900px;
@@ -982,9 +920,6 @@ section{
 
     color:#b1842f;
 }
-
-
-/* Important notice */
 
 .alert-box{
     max-width:850px;
@@ -1190,6 +1125,167 @@ section{
 
 
 /* =========================================================
+   GALERI
+========================================================= */
+
+.gallery-section{
+    background:
+        linear-gradient(
+            135deg,
+            #f8f3e7,
+            #eee8d8
+        );
+}
+
+.gallery-wrapper{
+    max-width:900px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 360px;
+
+    gap:50px;
+
+    align-items:center;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.09);
+}
+
+.gallery-text{
+    text-align:left;
+}
+
+.gallery-icon{
+    font-size:42px;
+
+    margin-bottom:10px;
+}
+
+.gallery-text h3{
+    color:#16472e;
+
+    font-size:28px;
+
+    line-height:1.2;
+
+    margin-bottom:15px;
+}
+
+.gallery-text p{
+    color:#555;
+
+    font-family:Arial,sans-serif;
+
+    font-size:14px;
+
+    line-height:1.8;
+}
+
+.gallery-note{
+    margin-top:12px;
+
+    color:#a0782c !important;
+
+    font-size:12px !important;
+
+    font-style:italic;
+}
+
+.gallery-button{
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:14px 25px;
+
+    border-radius:50px;
+
+    background:#16472e;
+
+    color:#f1d17a;
+
+    font-family:Arial,sans-serif;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    box-shadow:
+        0 8px 20px rgba(22,71,46,.18);
+}
+
+.gallery-button:hover{
+    transform:translateY(-4px);
+
+    background:#0d3823;
+}
+
+.qr-container{
+    text-align:center;
+}
+
+.qr-frame{
+    display:inline-block;
+
+    padding:15px;
+
+    background:white;
+
+    border-radius:20px;
+
+    border:2px solid #d6b35a;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.12),
+        0 0 25px rgba(214,179,90,.12);
+}
+
+.qr-frame img{
+    width:280px;
+
+    height:280px;
+
+    display:block;
+
+    object-fit:contain;
+}
+
+.qr-caption{
+    margin-top:18px;
+
+    color:#16472e;
+
+    font-family:Arial,sans-serif;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+}
+
+.qr-subcaption{
+    margin-top:5px;
+
+    color:#777;
+
+    font-family:Arial,sans-serif;
+
+    font-size:11px;
+}
+
+
+/* =========================================================
    MAKLUMAT
 ========================================================= */
 
@@ -1257,18 +1353,21 @@ footer p{
    MOBILE
 ========================================================= */
 
-@media(max-width:900px){
+@media(max-width:1000px){
 
-    .glance-grid{
-        grid-template-columns:repeat(2,1fr);
+    .nav-menu{
+        gap:12px;
     }
 
-    .glance-card:last-child{
-        grid-column:1 / -1;
+    .nav-menu a{
+        font-size:8px;
+    }
+
+    .glance-grid{
+        grid-template-columns:repeat(3,1fr);
     }
 
 }
-
 
 @media(max-width:800px){
 
@@ -1288,6 +1387,7 @@ footer p{
 
     .nav-brand img{
         width:38px;
+
         height:38px;
     }
 
@@ -1357,6 +1457,14 @@ footer p{
         font-size:32px;
     }
 
+    .glance-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .glance-card:last-child{
+        grid-column:1 / -1;
+    }
+
     .competition-stats{
         grid-template-columns:1fr;
     }
@@ -1385,8 +1493,29 @@ footer p{
         grid-column:auto;
     }
 
-}
+    .gallery-wrapper{
+        grid-template-columns:1fr;
 
+        gap:35px;
+
+        padding:30px 20px;
+    }
+
+    .gallery-text{
+        text-align:center;
+    }
+
+    .gallery-text h3{
+        font-size:24px;
+    }
+
+    .qr-frame img{
+        width:230px;
+
+        height:230px;
+    }
+
+}
 
 @media(max-width:450px){
 
@@ -1418,6 +1547,31 @@ footer p{
 
     .glance-card:last-child{
         grid-column:auto;
+    }
+
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print{
+
+    .navbar,
+    .hero-btn,
+    .countdown-section{
+        display:none;
+    }
+
+    .hero{
+        min-height:auto;
+
+        padding:40px;
+    }
+
+    section{
+        padding:35px;
     }
 
 }
@@ -1464,6 +1618,8 @@ footer p{
 
         <a href="#ajk">AJK</a>
 
+        <a href="#galeri">GALERI</a>
+
     </div>
 
 </nav>
@@ -1490,7 +1646,6 @@ footer p{
 
 
     <div class="hero-content">
-
 
         <img
             src="logo-maulidur.png"
@@ -1580,7 +1735,6 @@ footer p{
 
     <div class="countdown">
 
-
         <div class="count-box">
 
             <span
@@ -1644,14 +1798,13 @@ footer p{
 
         </div>
 
-
     </div>
 
 </section>
 
 
 <!-- =========================================================
-     PROGRAM AT A GLANCE
+     AT A GLANCE
 ========================================================= -->
 
 <section
@@ -2024,8 +2177,8 @@ footer p{
 
                 <br>
 
-                Penyampaian hadiah kepada 3 sepanduk terbaik
-                dan 5 saguhati.
+                Penyampaian hadiah kepada 3 sepanduk
+                terbaik dan 5 saguhati.
 
             </div>
 
@@ -2074,8 +2227,6 @@ footer p{
     </div>
 
 
-    <!-- STATS -->
-
     <div class="competition-stats">
 
 
@@ -2120,8 +2271,6 @@ footer p{
 
     </div>
 
-
-    <!-- CRITERIA -->
 
     <div class="criteria-box reveal">
 
@@ -2215,8 +2364,6 @@ footer p{
     </div>
 
 
-    <!-- NOTICE -->
-
     <div class="alert-box reveal">
 
         ⚠️ GURU PENASIHAT, SILA SEMAK KUMPULAN
@@ -2229,8 +2376,6 @@ footer p{
 
     </div>
 
-
-    <!-- POSTER -->
 
     <div class="poster-box reveal">
 
@@ -2599,6 +2744,110 @@ En. Azuwan bin Mohamad
 
 
 <!-- =========================================================
+     GALERI RASMI
+========================================================= -->
+
+<section
+    class="gallery-section"
+    id="galeri"
+>
+
+    <div class="section-title reveal">
+
+        <span>
+            DOKUMENTASI PROGRAM
+        </span>
+
+        <h2>
+            Galeri Rasmi
+        </h2>
+
+    </div>
+
+
+    <div class="gallery-wrapper reveal">
+
+
+        <div class="gallery-text">
+
+            <div class="gallery-icon">
+                📸
+            </div>
+
+
+            <h3>
+                Sambutan Maulidur Rasul
+                1448H / 2026M
+            </h3>
+
+
+            <p>
+
+                Saksikan koleksi gambar sepanjang
+                pelaksanaan Sambutan Maulidur Rasul
+                di SK Sungai Isap Murni.
+
+            </p>
+
+
+            <p class="gallery-note">
+
+                Album akan dikemas kini dari semasa
+                ke semasa sepanjang program berlangsung.
+
+            </p>
+
+
+            <a
+                href="https://photos.app.goo.gl/TDTVwbU3bCSrNvPe7"
+                target="_blank"
+                class="gallery-button"
+            >
+
+                📷 BUKA GALERI GOOGLE PHOTOS
+
+            </a>
+
+        </div>
+
+
+        <div class="qr-container">
+
+
+            <div class="qr-frame">
+
+                <img
+                    src="qr-galeri-maulidur-rasul.png"
+                    alt="QR Code Galeri Maulidur Rasul"
+                >
+
+            </div>
+
+
+            <div class="qr-caption">
+
+                IMBAS UNTUK MELIHAT GALERI
+
+            </div>
+
+
+            <div class="qr-subcaption">
+
+                Gunakan kamera telefon anda
+                untuk membuka album rasmi.
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
      MAKLUMAT
 ========================================================= -->
 
@@ -2647,7 +2896,9 @@ En. Azuwan bin Mohamad
             target="_blank"
             class="hero-btn"
         >
+
             📍 BUKA GOOGLE MAPS
+
         </a>
 
     </div>
@@ -2691,17 +2942,10 @@ En. Azuwan bin Mohamad
    COUNTDOWN
 ========================================================= */
 
-/*
-   Program bermula:
-   8 September 2026
-   7:30 pagi
-
-   Browser akan menggunakan waktu tempatan
-   pengguna.
-*/
-
 const targetDate =
-    new Date("September 8, 2026 07:30:00").getTime();
+    new Date(
+        "September 8, 2026 07:30:00"
+    ).getTime();
 
 
 function updateCountdown(){
@@ -2724,7 +2968,6 @@ function updateCountdown(){
         document.getElementById("seconds").innerText = "00";
 
         return;
-
     }
 
 
@@ -2779,7 +3022,10 @@ function updateCountdown(){
 
 updateCountdown();
 
-setInterval(updateCountdown,1000);
+setInterval(
+    updateCountdown,
+    1000
+);
 
 
 /* =========================================================
@@ -2830,7 +3076,7 @@ revealElements.forEach(
 
 
 /* =========================================================
-   STAGGER CARD ANIMATION
+   STAGGER ANIMATION
 ========================================================= */
 
 const cards =
@@ -2854,5 +3100,4 @@ cards.forEach(
 
 
 </body>
-
 </html>
