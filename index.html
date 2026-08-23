@@ -38,6 +38,24 @@ a{
 
 
 /* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(35px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+/* =========================================================
    NAVIGATION
 ========================================================= */
 
@@ -47,6 +65,7 @@ a{
     left:0;
     width:100%;
     height:70px;
+
     z-index:1000;
 
     display:flex;
@@ -55,7 +74,8 @@ a{
 
     padding:0 5%;
 
-    background:rgba(4,39,24,.88);
+    background:rgba(4,39,24,.90);
+
     backdrop-filter:blur(15px);
 
     border-bottom:1px solid rgba(241,209,122,.25);
@@ -64,33 +84,42 @@ a{
 .nav-brand{
     display:flex;
     align-items:center;
+
     gap:12px;
 
     color:#f1d17a;
 
     font-family:Arial,sans-serif;
+
     font-size:13px;
+
     font-weight:bold;
+
     letter-spacing:1.5px;
 }
 
 .nav-brand img{
     width:45px;
     height:45px;
+
     object-fit:contain;
 }
 
 .nav-menu{
     display:flex;
+
     align-items:center;
+
     gap:25px;
 }
 
 .nav-menu a{
-    color:#fff;
+    color:white;
 
     font-family:Arial,sans-serif;
+
     font-size:11px;
+
     font-weight:bold;
 
     transition:.3s;
@@ -109,10 +138,13 @@ a{
     min-height:100vh;
 
     position:relative;
+
     overflow:hidden;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 
     text-align:center;
@@ -147,13 +179,11 @@ a{
     );
 }
 
-
-/* Islamic pattern */
-
 .hero::before{
     content:"";
 
     position:absolute;
+
     inset:0;
 
     opacity:.06;
@@ -172,18 +202,17 @@ a{
     pointer-events:none;
 }
 
-
-/* Bottom glow */
-
 .hero::after{
     content:"";
 
     position:absolute;
 
     width:900px;
+
     height:250px;
 
     left:50%;
+
     bottom:-140px;
 
     transform:translateX(-50%);
@@ -199,7 +228,7 @@ a{
 
 
 /* =========================================================
-   DECORATIVE FRAME
+   HERO FRAME
 ========================================================= */
 
 .hero-frame{
@@ -208,6 +237,7 @@ a{
     inset:72px 6% 25px;
 
     border-left:1px solid rgba(241,209,122,.28);
+
     border-right:1px solid rgba(241,209,122,.28);
 
     pointer-events:none;
@@ -215,13 +245,14 @@ a{
 
 
 /* =========================================================
-   FLOATING DECORATIONS
+   LANTERN
 ========================================================= */
 
 .lantern{
     position:absolute;
 
     width:52px;
+
     height:72px;
 
     border:2px solid #c9a34c;
@@ -250,11 +281,13 @@ a{
     position:absolute;
 
     width:2px;
+
     height:90px;
 
     background:#c9a34c;
 
     left:50%;
+
     bottom:100%;
 
     transform:translateX(-50%);
@@ -293,6 +326,7 @@ a{
     position:absolute;
 
     width:5px;
+
     height:5px;
 
     border-radius:50%;
@@ -315,11 +349,13 @@ a{
 
     0%,100%{
         transform:translateY(0);
+
         opacity:.25;
     }
 
     50%{
         transform:translateY(-20px);
+
         opacity:1;
     }
 
@@ -332,18 +368,15 @@ a{
 
 .hero-content{
     position:relative;
+
     z-index:10;
 
     width:min(1050px,100%);
 }
 
-
-/* =========================================================
-   SCHOOL LOGO
-========================================================= */
-
 .hero-logo{
     width:170px;
+
     height:170px;
 
     object-fit:contain;
@@ -371,11 +404,6 @@ a{
 
 }
 
-
-/* =========================================================
-   BISMILLAH
-========================================================= */
-
 .bismillah{
     color:#f1d17a;
 
@@ -386,11 +414,6 @@ a{
     text-shadow:
         0 0 15px rgba(241,209,122,.4);
 }
-
-
-/* =========================================================
-   SCHOOL NAME
-========================================================= */
 
 .school-name{
     color:white;
@@ -406,13 +429,9 @@ a{
     opacity:.9;
 }
 
-
-/* =========================================================
-   GOLD LINE
-========================================================= */
-
 .gold-line{
     width:180px;
+
     height:2px;
 
     margin:10px auto 18px;
@@ -426,11 +445,6 @@ a{
 
     box-shadow:0 0 10px rgba(241,209,122,.5);
 }
-
-
-/* =========================================================
-   TITLE
-========================================================= */
 
 .hero h1{
     color:white;
@@ -453,15 +467,7 @@ a{
     color:#f1d17a;
 
     margin-top:12px;
-
-    text-shadow:
-        0 0 20px rgba(241,209,122,.2);
 }
-
-
-/* =========================================================
-   YEAR
-========================================================= */
 
 .hero-year{
     margin-top:25px;
@@ -475,11 +481,6 @@ a{
     letter-spacing:2px;
 }
 
-
-/* =========================================================
-   THEME
-========================================================= */
-
 .theme{
     display:inline-block;
 
@@ -488,6 +489,7 @@ a{
     padding:9px 28px;
 
     border-top:1px solid #f1d17a;
+
     border-bottom:1px solid #f1d17a;
 
     color:#f1d17a;
@@ -496,11 +498,6 @@ a{
 
     font-style:italic;
 }
-
-
-/* =========================================================
-   DATE
-========================================================= */
 
 .hero-date{
     margin-top:20px;
@@ -519,11 +516,6 @@ a{
 
     font-weight:bold;
 }
-
-
-/* =========================================================
-   BUTTON
-========================================================= */
 
 .hero-btn{
     display:inline-block;
@@ -565,6 +557,93 @@ a{
 
 
 /* =========================================================
+   COUNTDOWN
+========================================================= */
+
+.countdown-section{
+    background:#0a3824;
+
+    padding:65px 7%;
+
+    color:white;
+
+    text-align:center;
+}
+
+.countdown-label{
+    color:#f1d17a;
+
+    font-family:Arial,sans-serif;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    letter-spacing:4px;
+}
+
+.countdown-title{
+    margin-top:8px;
+
+    font-size:32px;
+
+    color:white;
+}
+
+.countdown{
+    max-width:800px;
+
+    margin:30px auto 0;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+}
+
+.count-box{
+    padding:22px 10px;
+
+    border:1px solid rgba(241,209,122,.3);
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(8px);
+}
+
+.count-number{
+    display:block;
+
+    color:#f1d17a;
+
+    font-family:Arial,sans-serif;
+
+    font-size:38px;
+
+    font-weight:800;
+
+    line-height:1;
+}
+
+.count-text{
+    display:block;
+
+    margin-top:8px;
+
+    font-family:Arial,sans-serif;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    opacity:.75;
+}
+
+
+/* =========================================================
    GENERAL SECTIONS
 ========================================================= */
 
@@ -602,11 +681,82 @@ section{
 
 
 /* =========================================================
+   AT A GLANCE
+========================================================= */
+
+.glance{
+    background:#f8f3e7;
+}
+
+.glance-grid{
+    max-width:1050px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:15px;
+}
+
+.glance-card{
+    background:white;
+
+    padding:25px 15px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:.3s;
+}
+
+.glance-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.10);
+}
+
+.glance-icon{
+    font-size:28px;
+
+    margin-bottom:10px;
+}
+
+.glance-label{
+    color:#b1842f;
+
+    font-family:Arial,sans-serif;
+
+    font-size:9px;
+
+    font-weight:bold;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+}
+
+.glance-value{
+    color:#16472e;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    margin-top:5px;
+}
+
+
+/* =========================================================
    PROGRAM
 ========================================================= */
 
 .program{
-    background:#f8f3e7;
+    background:#f1ecdf;
 }
 
 .program-box{
@@ -637,7 +787,7 @@ section{
 ========================================================= */
 
 .tentatif{
-    background:#f1ecdf;
+    background:#f8f3e7;
 }
 
 .timeline{
@@ -729,6 +879,113 @@ section{
     color:rgba(255,255,255,.82);
 }
 
+
+/* Competition stats */
+
+.competition-stats{
+    max-width:850px;
+
+    margin:0 auto 35px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+}
+
+.competition-stat{
+    text-align:center;
+
+    padding:25px 15px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(241,209,122,.25);
+}
+
+.competition-stat-number{
+    display:block;
+
+    color:#f1d17a;
+
+    font-family:Arial,sans-serif;
+
+    font-size:36px;
+
+    font-weight:900;
+}
+
+.competition-stat-label{
+    font-family:Arial,sans-serif;
+
+    font-size:11px;
+
+    opacity:.8;
+}
+
+
+/* Criteria */
+
+.criteria-box{
+    max-width:900px;
+
+    margin:0 auto 40px;
+
+    background:#f8f3e7;
+
+    color:#333;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+
+.criteria-title{
+    text-align:center;
+
+    color:#16472e;
+
+    font-size:25px;
+
+    margin-bottom:20px;
+}
+
+.criteria-row{
+    display:grid;
+
+    grid-template-columns:1fr 80px;
+
+    gap:10px;
+
+    padding:13px 10px;
+
+    border-bottom:1px solid #ddd;
+
+    font-family:Arial,sans-serif;
+
+    font-size:13px;
+}
+
+.criteria-row:last-child{
+    border-bottom:none;
+}
+
+.criteria-mark{
+    text-align:center;
+
+    font-weight:bold;
+
+    color:#b1842f;
+}
+
+
+/* Important notice */
+
 .alert-box{
     max-width:850px;
 
@@ -811,9 +1068,6 @@ section{
     background:#eee8d8;
 }
 
-
-/* Main committee */
-
 .ajk-utama{
     max-width:1000px;
 
@@ -842,8 +1096,6 @@ section{
 
 .ajk-card:hover{
     transform:translateY(-4px);
-
-    box-shadow:0 14px 30px rgba(0,0,0,.1);
 }
 
 .ajk-card.full{
@@ -873,9 +1125,6 @@ section{
 
     font-weight:bold;
 }
-
-
-/* Supporting committee */
 
 .ajk-subtitle{
     max-width:1000px;
@@ -1008,6 +1257,19 @@ footer p{
    MOBILE
 ========================================================= */
 
+@media(max-width:900px){
+
+    .glance-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .glance-card:last-child{
+        grid-column:1 / -1;
+    }
+
+}
+
+
 @media(max-width:800px){
 
     .navbar{
@@ -1039,6 +1301,7 @@ footer p{
 
     .hero-logo{
         width:125px;
+
         height:125px;
     }
 
@@ -1086,6 +1349,18 @@ footer p{
         font-size:30px;
     }
 
+    .countdown{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .count-number{
+        font-size:32px;
+    }
+
+    .competition-stats{
+        grid-template-columns:1fr;
+    }
+
     .program-box{
         padding:25px;
     }
@@ -1113,10 +1388,6 @@ footer p{
 }
 
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
 @media(max-width:450px){
 
     .hero h1{
@@ -1125,6 +1396,7 @@ footer p{
 
     .hero-logo{
         width:110px;
+
         height:110px;
     }
 
@@ -1140,6 +1412,14 @@ footer p{
         padding:13px 30px;
     }
 
+    .glance-grid{
+        grid-template-columns:1fr;
+    }
+
+    .glance-card:last-child{
+        grid-column:auto;
+    }
+
 }
 
 </style>
@@ -1150,9 +1430,9 @@ footer p{
 <body>
 
 
-<!-- =====================================================
+<!-- =========================================================
      NAVIGATION
-===================================================== -->
+========================================================= -->
 
 <nav class="navbar">
 
@@ -1172,6 +1452,8 @@ footer p{
 
         <a href="#utama">UTAMA</a>
 
+        <a href="#ringkas">INFO</a>
+
         <a href="#program">PROGRAM</a>
 
         <a href="#tentatif">TENTATIF</a>
@@ -1182,16 +1464,14 @@ footer p{
 
         <a href="#ajk">AJK</a>
 
-        <a href="#maklumat">MAKLUMAT</a>
-
     </div>
 
 </nav>
 
 
-<!-- =====================================================
+<!-- =========================================================
      HERO
-===================================================== -->
+========================================================= -->
 
 <header class="hero" id="utama">
 
@@ -1271,7 +1551,7 @@ footer p{
 
 
         <a
-            href="#program"
+            href="#ringkas"
             class="hero-btn"
         >
             TEROKAI PROGRAM ↓
@@ -1283,16 +1563,218 @@ footer p{
 </header>
 
 
-<!-- =====================================================
+<!-- =========================================================
+     COUNTDOWN
+========================================================= -->
+
+<section class="countdown-section">
+
+    <div class="countdown-label">
+        MENUJU SAMBUTAN MAULIDUR RASUL
+    </div>
+
+    <div class="countdown-title">
+        8 September 2026
+    </div>
+
+
+    <div class="countdown">
+
+
+        <div class="count-box">
+
+            <span
+                class="count-number"
+                id="days"
+            >
+                00
+            </span>
+
+            <span class="count-text">
+                HARI
+            </span>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <span
+                class="count-number"
+                id="hours"
+            >
+                00
+            </span>
+
+            <span class="count-text">
+                JAM
+            </span>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <span
+                class="count-number"
+                id="minutes"
+            >
+                00
+            </span>
+
+            <span class="count-text">
+                MINIT
+            </span>
+
+        </div>
+
+
+        <div class="count-box">
+
+            <span
+                class="count-number"
+                id="seconds"
+            >
+                00
+            </span>
+
+            <span class="count-text">
+                SAAT
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROGRAM AT A GLANCE
+========================================================= -->
+
+<section
+    class="glance"
+    id="ringkas"
+>
+
+    <div class="section-title reveal">
+
+        <span>
+            PROGRAM AT A GLANCE
+        </span>
+
+        <h2>
+            Sekilas Maklumat Program
+        </h2>
+
+    </div>
+
+
+    <div class="glance-grid">
+
+
+        <div class="glance-card reveal">
+
+            <div class="glance-icon">
+                📅
+            </div>
+
+            <div class="glance-label">
+                Tarikh
+            </div>
+
+            <div class="glance-value">
+                8 September 2026
+            </div>
+
+        </div>
+
+
+        <div class="glance-card reveal">
+
+            <div class="glance-icon">
+                🕘
+            </div>
+
+            <div class="glance-label">
+                Masa
+            </div>
+
+            <div class="glance-value">
+                7.30 pagi – 10.00 pagi
+            </div>
+
+        </div>
+
+
+        <div class="glance-card reveal">
+
+            <div class="glance-icon">
+                📍
+            </div>
+
+            <div class="glance-label">
+                Tempat
+            </div>
+
+            <div class="glance-value">
+                SK Sungai Isap Murni
+            </div>
+
+        </div>
+
+
+        <div class="glance-card reveal">
+
+            <div class="glance-icon">
+                👥
+            </div>
+
+            <div class="glance-label">
+                Sasaran
+            </div>
+
+            <div class="glance-value">
+                579 Murid
+            </div>
+
+        </div>
+
+
+        <div class="glance-card reveal">
+
+            <div class="glance-icon">
+                🎨
+            </div>
+
+            <div class="glance-label">
+                Aktiviti
+            </div>
+
+            <div class="glance-value">
+                Perarakan · Sepanduk · Ceramah
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
      PROGRAM
-===================================================== -->
+========================================================= -->
 
 <section
     class="program"
     id="program"
 >
 
-    <div class="section-title">
+    <div class="section-title reveal">
 
         <span>
             SAMBUTAN MAULIDUR RASUL
@@ -1305,7 +1787,7 @@ footer p{
     </div>
 
 
-    <div class="program-box">
+    <div class="program-box reveal">
 
         <p>
 
@@ -1328,16 +1810,16 @@ footer p{
 </section>
 
 
-<!-- =====================================================
+<!-- =========================================================
      TENTATIF
-===================================================== -->
+========================================================= -->
 
 <section
     class="tentatif"
     id="tentatif"
 >
 
-    <div class="section-title">
+    <div class="section-title reveal">
 
         <span>
             JADUAL PROGRAM
@@ -1353,7 +1835,7 @@ footer p{
     <div class="timeline">
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
             <div class="timeline-time">
                 26 OGOS 2026<br>
@@ -1376,7 +1858,7 @@ footer p{
         </div>
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
             <div class="timeline-time">
                 27 OGOS 2026<br>
@@ -1399,7 +1881,7 @@ footer p{
         </div>
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
             <div class="timeline-time">
                 8 SEPTEMBER<br>
@@ -1422,7 +1904,7 @@ footer p{
         </div>
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
             <div class="timeline-time">
                 7.50 – 8.00 PAGI
@@ -1444,7 +1926,7 @@ footer p{
         </div>
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
             <div class="timeline-time">
                 8.00 – 8.20 PAGI
@@ -1466,7 +1948,7 @@ footer p{
         </div>
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
             <div class="timeline-time">
                 8.20 – 8.50 PAGI
@@ -1488,7 +1970,7 @@ footer p{
         </div>
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
             <div class="timeline-time">
                 9.00 – 10.00 PAGI
@@ -1510,7 +1992,7 @@ footer p{
         </div>
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
             <div class="timeline-time">
                 10.00 PAGI
@@ -1527,7 +2009,7 @@ footer p{
         </div>
 
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
 
             <div class="timeline-time">
                 11 SEPTEMBER<br>
@@ -1542,8 +2024,8 @@ footer p{
 
                 <br>
 
-                Penyampaian hadiah kepada 3 sepanduk
-                terbaik dan 5 saguhati.
+                Penyampaian hadiah kepada 3 sepanduk terbaik
+                dan 5 saguhati.
 
             </div>
 
@@ -1555,32 +2037,33 @@ footer p{
 </section>
 
 
-<!-- =====================================================
-     KUMPULAN SEPANDUK
-===================================================== -->
+<!-- =========================================================
+     PERTANDINGAN SEPANDUK
+========================================================= -->
 
 <section
     class="kumpulan"
     id="kumpulan"
 >
 
-    <div class="section-title">
+    <div class="section-title reveal">
 
         <span>
-            PERHATIAN GURU TAHAP 2
+            KREATIVITI & KERJASAMA
         </span>
 
         <h2>
-            Kumpulan Sepanduk & Perarakan
+            Pertandingan Sepanduk
         </h2>
 
     </div>
 
 
-    <div class="kumpulan-intro">
+    <div class="kumpulan-intro reveal">
 
-        Murid Tahap 2 (Tahun 4, 5 dan 6) dipecahkan
-        kepada <strong>8 kumpulan</strong> berdasarkan
+        Pertandingan melibatkan murid Tahap 2
+        (Tahun 4, 5 dan 6) yang dipecahkan kepada
+        <strong>8 kumpulan</strong> berdasarkan
         Kelab dan Persatuan Kokurikulum.
 
         <br><br>
@@ -1591,15 +2074,165 @@ footer p{
     </div>
 
 
-    <div class="alert-box">
+    <!-- STATS -->
 
-        ⚠️ GURU PENASIHAT, SILA SEMAK KUMPULAN
-        KELAB & PERSATUAN ANDA DI BAWAH
+    <div class="competition-stats">
+
+
+        <div class="competition-stat reveal">
+
+            <span class="competition-stat-number">
+                8
+            </span>
+
+            <span class="competition-stat-label">
+                KUMPULAN
+            </span>
+
+        </div>
+
+
+        <div class="competition-stat reveal">
+
+            <span class="competition-stat-number">
+                100
+            </span>
+
+            <span class="competition-stat-label">
+                MARKAH PENUH
+            </span>
+
+        </div>
+
+
+        <div class="competition-stat reveal">
+
+            <span class="competition-stat-number">
+                3 + 5
+            </span>
+
+            <span class="competition-stat-label">
+                PEMENANG + SAGUHATI
+            </span>
+
+        </div>
+
 
     </div>
 
 
-    <div class="poster-box">
+    <!-- CRITERIA -->
+
+    <div class="criteria-box reveal">
+
+        <div class="criteria-title">
+            🏆 Kriteria Penghakiman
+        </div>
+
+
+        <div class="criteria-row">
+
+            <span>
+                Kreativiti dan keaslian
+            </span>
+
+            <span class="criteria-mark">
+                30
+            </span>
+
+        </div>
+
+
+        <div class="criteria-row">
+
+            <span>
+                Kesesuaian tema Maulidur Rasul
+            </span>
+
+            <span class="criteria-mark">
+                25
+            </span>
+
+        </div>
+
+
+        <div class="criteria-row">
+
+            <span>
+                Kekemasan dan mutu hasil
+            </span>
+
+            <span class="criteria-mark">
+                20
+            </span>
+
+        </div>
+
+
+        <div class="criteria-row">
+
+            <span>
+                Penggunaan warna dan visual
+            </span>
+
+            <span class="criteria-mark">
+                15
+            </span>
+
+        </div>
+
+
+        <div class="criteria-row">
+
+            <span>
+                Kerjasama kumpulan
+            </span>
+
+            <span class="criteria-mark">
+                10
+            </span>
+
+        </div>
+
+
+        <div
+            style="
+            margin-top:20px;
+            padding:15px;
+            text-align:center;
+            border-radius:12px;
+            background:#16472e;
+            color:#f1d17a;
+            font-family:Arial,sans-serif;
+            font-weight:bold;
+            "
+        >
+
+            JUMLAH: 100 MARKAH
+
+        </div>
+
+    </div>
+
+
+    <!-- NOTICE -->
+
+    <div class="alert-box reveal">
+
+        ⚠️ GURU PENASIHAT, SILA SEMAK KUMPULAN
+        KELAB & PERSATUAN ANDA
+
+        <br><br>
+
+        Murid Tahap 2 akan menyediakan sepanduk
+        pada <strong>26 & 27 Ogos 2026</strong>.
+
+    </div>
+
+
+    <!-- POSTER -->
+
+    <div class="poster-box reveal">
 
         <img
             src="senarai guru penasihat.png"
@@ -1608,19 +2241,44 @@ footer p{
 
     </div>
 
+
+    <div
+        style="
+        max-width:850px;
+        margin:30px auto 0;
+        text-align:center;
+        color:rgba(255,255,255,.75);
+        font-family:Arial,sans-serif;
+        font-size:12px;
+        "
+        class="reveal"
+    >
+
+        🏆 Tiga sepanduk terbaik akan dipilih.
+        Lima kumpulan turut menerima saguhati.
+
+        <br>
+
+        Penyampaian hadiah:
+        <strong style="color:#f1d17a;">
+            11 September 2026 (Jumaat)
+        </strong>
+
+    </div>
+
 </section>
 
 
-<!-- =====================================================
+<!-- =========================================================
      PENCERAMAH
-===================================================== -->
+========================================================= -->
 
 <section
     class="penceramah"
     id="penceramah"
 >
 
-    <div class="section-title">
+    <div class="section-title reveal">
 
         <span>
             PENGISIAN ILMIAH
@@ -1633,7 +2291,7 @@ footer p{
     </div>
 
 
-    <div class="penceramah-poster">
+    <div class="penceramah-poster reveal">
 
         <img
             src="penceramah.png"
@@ -1645,16 +2303,16 @@ footer p{
 </section>
 
 
-<!-- =====================================================
+<!-- =========================================================
      AJK
-===================================================== -->
+========================================================= -->
 
 <section
     class="ajk"
     id="ajk"
 >
 
-    <div class="section-title">
+    <div class="section-title reveal">
 
         <span>
             PENGURUSAN PROGRAM
@@ -1667,14 +2325,10 @@ footer p{
     </div>
 
 
-    <!-- ================================================
-         PENGURUSAN UTAMA
-    ================================================= -->
-
     <div class="ajk-utama">
 
 
-        <div class="ajk-card full">
+        <div class="ajk-card full reveal">
 
             <div class="ajk-jawatan">
                 Penasihat
@@ -1687,7 +2341,7 @@ footer p{
         </div>
 
 
-        <div class="ajk-card">
+        <div class="ajk-card reveal">
 
             <div class="ajk-jawatan">
                 Pengerusi
@@ -1700,7 +2354,7 @@ footer p{
         </div>
 
 
-        <div class="ajk-card">
+        <div class="ajk-card reveal">
 
             <div class="ajk-jawatan">
                 Naib Pengerusi 1
@@ -1713,7 +2367,7 @@ footer p{
         </div>
 
 
-        <div class="ajk-card">
+        <div class="ajk-card reveal">
 
             <div class="ajk-jawatan">
                 Naib Pengerusi 2
@@ -1726,7 +2380,7 @@ footer p{
         </div>
 
 
-        <div class="ajk-card">
+        <div class="ajk-card reveal">
 
             <div class="ajk-jawatan">
                 Penyelaras Program
@@ -1739,7 +2393,7 @@ footer p{
         </div>
 
 
-        <div class="ajk-card full">
+        <div class="ajk-card full reveal">
 
             <div class="ajk-jawatan">
                 Bendahari
@@ -1755,11 +2409,7 @@ footer p{
     </div>
 
 
-    <!-- ================================================
-         AJK PELAKSANA
-    ================================================= -->
-
-    <h3 class="ajk-subtitle">
+    <h3 class="ajk-subtitle reveal">
         Jawatankuasa Pelaksana
     </h3>
 
@@ -1767,9 +2417,7 @@ footer p{
     <div class="ajk-pelaksana">
 
 
-        <!-- PERARAKAN -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 🥁
@@ -1786,9 +2434,7 @@ En. Hatim bin Zulkifli
         </div>
 
 
-        <!-- KESELAMATAN -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 🛡️
@@ -1806,9 +2452,7 @@ Semua Guru Kelas
         </div>
 
 
-        <!-- SEPANDUK -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 🎨
@@ -1825,9 +2469,7 @@ En. Fakhrul Anwar bin Ihyauddeen
         </div>
 
 
-        <!-- PENGHAKIMAN -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 🏆
@@ -1845,9 +2487,7 @@ Panitia PSV
         </div>
 
 
-        <!-- PERSIAPAN TEMPAT -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 🏫
@@ -1867,9 +2507,7 @@ Cik Nurul Syafiqah binti Mohd Aris
         </div>
 
 
-        <!-- SIAR RAYA -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 🔊
@@ -1886,9 +2524,7 @@ En. Ahmad Fadzil bin Abdullah
         </div>
 
 
-        <!-- FOTOGRAFI -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 📸
@@ -1906,9 +2542,7 @@ Pn. Nur Athirah binti Rosmadi
         </div>
 
 
-        <!-- DOKUMENTASI -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 📝
@@ -1925,9 +2559,7 @@ En. Fakhrul Anwar bin Ihyauddeen
         </div>
 
 
-        <!-- HADIAH -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 🎁
@@ -1944,9 +2576,7 @@ En. Fakhrul Anwar bin Ihyauddeen
         </div>
 
 
-        <!-- KECEMASAN -->
-
-        <div class="ajk-role">
+        <div class="ajk-role reveal">
 
             <div class="ajk-role-icon">
                 🚑
@@ -1968,16 +2598,16 @@ En. Azuwan bin Mohamad
 </section>
 
 
-<!-- =====================================================
+<!-- =========================================================
      MAKLUMAT
-===================================================== -->
+========================================================= -->
 
 <section
     class="maklumat"
     id="maklumat"
 >
 
-    <div class="section-title">
+    <div class="section-title reveal">
 
         <span>
             MAKLUMAT PROGRAM
@@ -1990,11 +2620,12 @@ En. Azuwan bin Mohamad
     </div>
 
 
-    <div class="info-box">
+    <div class="info-box reveal">
 
         <p>
 
-            📍 SK Sungai Isap Murni, Kuantan
+            📍 SK Sungai Isap Murni dan sekitar
+            Perkampungan Sungai Isap Murni
 
             <br>
 
@@ -2006,8 +2637,7 @@ En. Azuwan bin Mohamad
 
             <br>
 
-            🕌 Sekolah dan sekitar Perkampungan
-            Sungai Isap Murni
+            👥 Semua murid perdana Tahun 1 hingga Tahun 6
 
         </p>
 
@@ -2025,9 +2655,9 @@ En. Azuwan bin Mohamad
 </section>
 
 
-<!-- =====================================================
+<!-- =========================================================
      FOOTER
-===================================================== -->
+========================================================= -->
 
 <footer>
 
@@ -2050,5 +2680,179 @@ En. Azuwan bin Mohamad
 </footer>
 
 
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
+
+/*
+   Program bermula:
+   8 September 2026
+   7:30 pagi
+
+   Browser akan menggunakan waktu tempatan
+   pengguna.
+*/
+
+const targetDate =
+    new Date("September 8, 2026 07:30:00").getTime();
+
+
+function updateCountdown(){
+
+    const now =
+        new Date().getTime();
+
+    const distance =
+        targetDate - now;
+
+
+    if(distance <= 0){
+
+        document.getElementById("days").innerText = "00";
+
+        document.getElementById("hours").innerText = "00";
+
+        document.getElementById("minutes").innerText = "00";
+
+        document.getElementById("seconds").innerText = "00";
+
+        return;
+
+    }
+
+
+    const days =
+        Math.floor(
+            distance /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60 * 24)) /
+            (1000 * 60 * 60)
+        );
+
+
+    const minutes =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60)) /
+            (1000 * 60)
+        );
+
+
+    const seconds =
+        Math.floor(
+            (distance %
+            (1000 * 60)) /
+            1000
+        );
+
+
+    document.getElementById("days").innerText =
+        String(days).padStart(2,"0");
+
+
+    document.getElementById("hours").innerText =
+        String(hours).padStart(2,"0");
+
+
+    document.getElementById("minutes").innerText =
+        String(minutes).padStart(2,"0");
+
+
+    document.getElementById("seconds").innerText =
+        String(seconds).padStart(2,"0");
+
+}
+
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+
+const observer =
+    new IntersectionObserver(
+
+        function(entries){
+
+            entries.forEach(
+
+                function(entry){
+
+                    if(entry.isIntersecting){
+
+                        entry.target.classList.add("active");
+
+                    }
+
+                }
+
+            );
+
+        },
+
+        {
+            threshold:.12
+        }
+
+    );
+
+
+revealElements.forEach(
+
+    function(element){
+
+        observer.observe(element);
+
+    }
+
+);
+
+
+/* =========================================================
+   STAGGER CARD ANIMATION
+========================================================= */
+
+const cards =
+    document.querySelectorAll(
+        ".glance-card, .timeline-item, .ajk-role, .ajk-card"
+    );
+
+
+cards.forEach(
+
+    function(card,index){
+
+        card.style.transitionDelay =
+            (index % 5) * 0.08 + "s";
+
+    }
+
+);
+
+</script>
+
+
 </body>
+
 </html>
