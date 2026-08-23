@@ -4,9 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sambutan Maulidur Rasul 1446H/2026M</title>
+<title>Sambutan Maulidur Rasul 1448H | SK Sungai Isap Murni</title>
 
 <style>
+
+/* =========================
+   GLOBAL
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,336 +24,971 @@ html {
 
 body {
     font-family: Georgia, "Times New Roman", serif;
-    background: #f7f3e9;
-    color: #26352b;
+    background: #f7f4eb;
+    color: #26392d;
     line-height: 1.7;
 }
 
-/* NAVIGATION */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 15px 6%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(25, 60, 43, 0.95);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 3px 20px rgba(0,0,0,.15);
-}
-
-.logo {
-    color: #f3d27a;
-    font-weight: bold;
-    font-size: 17px;
-    letter-spacing: 1px;
-}
-
-nav a {
-    color: white;
+a {
     text-decoration: none;
-    margin-left: 22px;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
 }
 
-nav a:hover {
-    color: #f3d27a;
-}
-
-
-/* HERO */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 110px 25px 70px;
-    color: white;
-
-    background:
-        radial-gradient(circle at 20% 20%, rgba(220,175,75,.25), transparent 30%),
-        radial-gradient(circle at 80% 80%, rgba(255,255,255,.08), transparent 35%),
-        linear-gradient(135deg, #102f21, #1d5a3b 55%, #0e281d);
-
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: "✦  ۞  ✦  ۞  ✦";
-    position: absolute;
-    top: 13%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    color: rgba(243,210,122,.25);
-    font-size: 45px;
-    letter-spacing: 25px;
-}
-
-.hero-content {
-    max-width: 900px;
-    position: relative;
-    z-index: 2;
-}
-
-.bismillah {
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #f3d27a;
-}
-
-.hero small {
-    display: block;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    opacity: .85;
-}
-
-.hero h1 {
-    font-size: clamp(38px, 7vw, 75px);
-    line-height: 1.05;
-    margin: 22px 0;
-    font-weight: bold;
-    color: #fff;
-}
-
-.hero h1 span {
-    color: #f3d27a;
-}
-
-.hero h2 {
-    font-size: 24px;
-    font-weight: normal;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    opacity: .85;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 14px 30px;
-    border-radius: 50px;
-    background: #f3d27a;
-    color: #173626;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    transition: .3s;
-    box-shadow: 0 8px 25px rgba(0,0,0,.2);
-}
-
-.btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0,0,0,.3);
-}
-
-
-/* SECTIONS */
 section {
     padding: 90px 7%;
 }
 
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px 6%;
+
+    background: rgba(11, 48, 31, 0.96);
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(239, 205, 117, .18);
+
+    box-shadow: 0 5px 25px rgba(0,0,0,.15);
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #f1d17a;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-nav img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #f1d17a;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 120px 25px 70px;
+
+    color: white;
+
+    background:
+        radial-gradient(circle at 15% 15%, rgba(218,181,82,.20), transparent 25%),
+        radial-gradient(circle at 85% 85%, rgba(218,181,82,.13), transparent 28%),
+        linear-gradient(135deg, #0b3321, #155738 52%, #092719);
+}
+
+
+/* Islamic pattern */
+
+.hero::before {
+    content: "✦     ۞     ✦     ۞     ✦";
+
+    position: absolute;
+    top: 105px;
+    left: 0;
+
+    width: 100%;
+
+    color: rgba(242,208,112,.24);
+
+    font-size: 42px;
+    letter-spacing: 18px;
+
+    white-space: nowrap;
+
+    animation: floatPattern 5s ease-in-out infinite;
+}
+
+@keyframes floatPattern {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
+
+/* decorative circles */
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border: 1px solid rgba(241,209,122,.10);
+
+    border-radius: 50%;
+
+    right: -250px;
+    bottom: -250px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 950px;
+
+    animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* SCHOOL LOGO */
+
+.school-logo {
+    width: 105px;
+    height: 105px;
+
+    object-fit: contain;
+
+    background: white;
+
+    padding: 8px;
+
+    border-radius: 50%;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 0 0 5px rgba(241,209,122,.15),
+        0 15px 40px rgba(0,0,0,.25);
+
+    animation: logoFloat 4s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+.bismillah {
+    color: #f1d17a;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.school-name {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+    letter-spacing: 5px;
+
+    opacity: .85;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 85px);
+
+    line-height: .98;
+
+    margin: 22px 0;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+.hero h1 span {
+    color: #f1d17a;
+}
+
+.hero-year {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.hero-theme {
+    font-family: Arial, sans-serif;
+
+    color: #f1d17a;
+
+    font-size: 15px;
+
+    font-style: italic;
+
+    letter-spacing: 1px;
+}
+
+.hero-date {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    opacity: .8;
+
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    border-radius: 50px;
+
+    background: #f1d17a;
+
+    color: #183b28;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
 .section-title {
     text-align: center;
+
     margin-bottom: 50px;
 }
 
 .section-title span {
-    color: #b28a32;
     font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
+
+    color: #b18a35;
+
+    font-size: 11px;
+
     letter-spacing: 4px;
+
+    font-weight: bold;
 }
 
 .section-title h2 {
-    font-size: 40px;
-    margin-top: 8px;
-    color: #193d2b;
+    font-size: 38px;
+
+    color: #17452d;
+
+    margin-top: 7px;
+}
+
+.section-title p {
+    max-width: 700px;
+
+    margin: 12px auto 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    color: #777;
 }
 
 
-/* UCAPAN */
+/* =========================
+   PROGRAM INTRO
+========================= */
+
 .intro {
     max-width: 850px;
+
     margin: auto;
+
     text-align: center;
+
     font-size: 18px;
 }
 
-.intro .quote {
-    font-size: 32px;
-    color: #b28a32;
-    margin-bottom: 15px;
+.intro-mark {
+    font-size: 40px;
+
+    color: #b18a35;
+
+    margin-bottom: 10px;
 }
 
 
-/* INFO CARDS */
+/* =========================
+   INFO CARDS
+========================= */
+
 .cards {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 25px;
-    max-width: 1100px;
-    margin: auto;
 }
 
 .card {
     background: white;
+
     padding: 35px 28px;
-    border-radius: 20px;
+
+    border-radius: 22px;
+
     text-align: center;
-    border: 1px solid #e5d9bb;
-    box-shadow: 0 10px 30px rgba(50,70,50,.08);
-    transition: .3s;
+
+    border: 1px solid #e8dcc0;
+
+    box-shadow: 0 10px 35px rgba(36,60,43,.07);
+
+    transition: .35s;
 }
 
 .card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(36,60,43,.13);
 }
 
-.icon {
-    font-size: 38px;
-    margin-bottom: 18px;
+.card-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
 }
 
 .card h3 {
-    color: #1d5539;
-    margin-bottom: 10px;
-    font-size: 21px;
+    color: #1c5035;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
 }
 
 .card p {
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #666;
-}
 
+    color: #6d6d6d;
 
-/* TENTATIF */
-.schedule {
-    max-width: 900px;
-    margin: auto;
-}
-
-.item {
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 20px;
-    background: white;
-    padding: 22px 25px;
-    margin-bottom: 12px;
-    border-radius: 15px;
-    border-left: 5px solid #c59b3c;
-    box-shadow: 0 5px 20px rgba(0,0,0,.05);
-}
-
-.time {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    color: #9a7425;
-}
-
-.item strong {
-    color: #1d4d34;
-}
-
-.item p {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #777;
-}
-
-
-/* AJK */
-.committee {
-    max-width: 900px;
-    margin: auto;
-}
-
-.person {
-    background: white;
-    padding: 22px 25px;
-    border-radius: 15px;
-    margin-bottom: 12px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #e7dcc1;
-    box-shadow: 0 5px 18px rgba(0,0,0,.04);
-}
-
-.person strong {
-    color: #1d4d34;
-}
-
-.person span {
-    color: #777;
-    font-family: Arial, sans-serif;
-}
-
-
-/* QUOTE */
-.quote-section {
-    background:
-        linear-gradient(rgba(20,60,40,.94), rgba(20,60,40,.94)),
-        url("");
-
-    color: white;
-    text-align: center;
-}
-
-.quote-section h2 {
-    font-size: 32px;
-    color: #f3d27a;
-    margin-bottom: 20px;
-}
-
-.quote-section p {
-    max-width: 750px;
-    margin: auto;
-    font-size: 18px;
-}
-
-
-/* FOOTER */
-footer {
-    background: #0b2519;
-    color: white;
-    text-align: center;
-    padding: 55px 20px;
-}
-
-footer h2 {
-    color: #f3d27a;
-    margin-bottom: 10px;
-}
-
-footer p {
-    font-family: Arial, sans-serif;
-    opacity: .7;
     font-size: 13px;
 }
 
 
-/* MOBILE */
-@media(max-width: 700px) {
+/* =========================
+   EVENT HIGHLIGHT
+========================= */
+
+.highlight {
+    background: #123e29;
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.highlight-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.highlight-card {
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,.06);
+
+    border: 1px solid rgba(241,209,122,.15);
+
+    text-align: center;
+}
+
+.highlight-card .number {
+    font-size: 30px;
+
+    color: #f1d17a;
+
+    font-weight: bold;
+}
+
+.highlight-card h3 {
+    margin: 8px 0;
+
+    font-size: 17px;
+}
+
+.highlight-card p {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    opacity: .75;
+}
+
+
+/* =========================
+   TENTATIF
+========================= */
+
+.timeline {
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.timeline-item {
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    gap: 20px;
+
+    background: white;
+
+    padding: 22px 25px;
+
+    margin-bottom: 12px;
+
+    border-radius: 16px;
+
+    border-left: 5px solid #c59d43;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+
+    transition: .3s;
+}
+
+.timeline-item:hover {
+    transform: translateX(5px);
+}
+
+.timeline-time {
+    color: #9a7429;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.timeline-content strong {
+    color: #1c5035;
+}
+
+.timeline-content p {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    color: #777;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   SPECIAL DATES
+========================= */
+
+.special-dates {
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.date-card {
+    background: linear-gradient(145deg,#fff,#f8f1dd);
+
+    border: 1px solid #e2d2ad;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+.date-card .date {
+    color: #b18a35;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.date-card h3 {
+    color: #1c5035;
+
+    margin: 8px 0;
+
+    font-size: 17px;
+}
+
+.date-card p {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+
+/* =========================
+   SPEAKER
+========================= */
+
+.speaker-section {
+    background: #eee8d8;
+}
+
+.speaker {
+    max-width: 950px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+
+    align-items: center;
+}
+
+.poster {
+    width: 100%;
+
+    max-height: 650px;
+
+    object-fit: contain;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.18);
+
+    cursor: pointer;
+
+    transition: .35s;
+}
+
+.poster:hover {
+    transform: scale(1.02);
+}
+
+.speaker-info span {
+    font-family: Arial, sans-serif;
+
+    color: #b18a35;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+}
+
+.speaker-info h2 {
+    color: #17452d;
+
+    font-size: 38px;
+
+    line-height: 1.1;
+
+    margin: 12px 0 20px;
+}
+
+.speaker-title {
+    font-size: 20px;
+
+    color: #8b6929;
+
+    font-style: italic;
+
+    margin-bottom: 20px;
+}
+
+.speaker-info p {
+    font-family: Arial, sans-serif;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+.click-poster {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #9a7429;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 2000;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.88);
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+}
+
+.modal img {
+    max-width: 95%;
+
+    max-height: 92vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+.modal-close {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    color: white;
+
+    font-size: 38px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   AJK
+========================= */
+
+.ajk-container {
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.ajk-group {
+    margin-bottom: 40px;
+}
+
+.ajk-group-title {
+    color: #b18a35;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid #dfd3b7;
+
+    padding-bottom: 8px;
+}
+
+.ajk-row {
+    display: grid;
+
+    grid-template-columns: 240px 1fr;
+
+    background: white;
+
+    padding: 16px 20px;
+
+    margin-bottom: 8px;
+
+    border-radius: 12px;
+
+    border: 1px solid #eee5d1;
+}
+
+.ajk-role {
+    font-family: Arial, sans-serif;
+
+    color: #8d6a2c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.ajk-name {
+    color: #294936;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   SAFETY
+========================= */
+
+.safety {
+    background: #f0eadc;
+}
+
+.safety-list {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.safety-item {
+    display: flex;
+
+    gap: 15px;
+
+    background: white;
+
+    padding: 16px 20px;
+
+    margin-bottom: 9px;
+
+    border-radius: 12px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    color: #555;
+}
+
+.safety-icon {
+    color: #b18a35;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.location-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    border: 1px solid #e4d9be;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+.location-card h3 {
+    color: #17452d;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.location-card p {
+    font-family: Arial, sans-serif;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+.map-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: #17452d;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #092619;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+.footer-arabic {
+    color: #f1d17a;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+footer h2 {
+    color: #f1d17a;
+
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    opacity: .65;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 800px) {
 
     nav {
-        padding: 14px 18px;
+        padding: 10px 15px;
     }
 
-    nav div:last-child {
+    .logo-nav {
+        font-size: 13px;
+    }
+
+    .logo-nav img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .nav-links {
         display: none;
     }
 
@@ -356,86 +996,154 @@ footer p {
         padding: 70px 20px;
     }
 
-    .hero h1 {
-        font-size: 45px;
+    .hero {
+        padding-top: 120px;
     }
 
-    .hero h2 {
-        font-size: 19px;
+    .hero::before {
+        font-size: 28px;
+
+        letter-spacing: 7px;
+    }
+
+    .school-logo {
+        width: 85px;
+        height: 85px;
     }
 
     .bismillah {
         font-size: 23px;
     }
 
-    .cards {
+    .school-name {
+        font-size: 9px;
+
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-year {
+        font-size: 20px;
+    }
+
+    .cards,
+    .highlight-grid,
+    .special-dates {
         grid-template-columns: 1fr;
     }
 
-    .item {
+    .timeline-item {
         grid-template-columns: 1fr;
+
         gap: 5px;
     }
 
-    .person {
-        display: block;
+    .speaker {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
     }
 
-    .person span {
-        display: block;
-        margin-top: 5px;
+    .speaker-info {
+        text-align: center;
+    }
+
+    .speaker-info h2 {
+        font-size: 31px;
+    }
+
+    .ajk-row {
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
     }
 }
+
 </style>
 </head>
 
 
 <body>
 
-<!-- NAVIGATION -->
+
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
-    <div class="logo">
-        ۞ MAULIDUR RASUL
-    </div>
+    <a href="#utama" class="logo-nav">
 
-    <div>
-        <a href="#utama">Utama</a>
-        <a href="#program">Program</a>
-        <a href="#tentatif">Tentatif</a>
+        <img src="_LOGO SIMURNIS.jpg" alt="Logo SK Sungai Isap Murni">
+
+        <span>MAULIDUR RASUL</span>
+
+    </a>
+
+    <div class="nav-links">
+
+        <a href="#utama">UTAMA</a>
+
+        <a href="#program">PROGRAM</a>
+
+        <a href="#tentatif">TENTATIF</a>
+
+        <a href="#penceramah">PENCERAMAH</a>
+
         <a href="#ajk">AJK</a>
+
+        <a href="#maklumat">MAKLUMAT</a>
+
     </div>
 
 </nav>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <header class="hero" id="utama">
 
     <div class="hero-content">
 
+        <img
+            src="_LOGO SIMURNIS.jpg"
+            class="school-logo"
+            alt="Logo SK Sungai Isap Murni"
+        >
+
         <div class="bismillah">
             بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
         </div>
 
-        <small>
-            SK SUNGAI ISAP MURNI
-        </small>
+        <div class="school-name">
+            SK SUNGAI ISAP MURNI · KUANTAN
+        </div>
 
         <h1>
             SAMBUTAN<br>
             <span>MAULIDUR RASUL</span>
         </h1>
 
-        <h2>
-            TAHUN 1446H / 2026M
-        </h2>
+        <div class="hero-year">
+            1448H / 2026M
+        </div>
 
-        <p>
-            Buku Program Digital
-        </p>
+        <div class="hero-theme">
+            “MADANI Dihayati, Ummah Diberkati”
+        </div>
+
+        <div class="hero-date">
+            8 SEPTEMBER 2026 · SELASA · 7.30 PAGI – 10.00 PAGI
+        </div>
 
         <a href="#program" class="btn">
             TEROKAI PROGRAM ↓
@@ -446,106 +1154,189 @@ footer p {
 </header>
 
 
-<!-- PROGRAM -->
+<!-- =========================
+     PROGRAM
+========================= -->
 
 <section id="program">
 
-    <div class="section-title">
+    <div class="container">
 
-        <span>MAULIDUR RASUL</span>
+        <div class="section-title">
 
-        <h2>
-            Mengenali Rasulullah ﷺ
-        </h2>
+            <span>TENTANG PROGRAM</span>
 
-    </div>
+            <h2>
+                Mengenali & Mencintai Rasulullah ﷺ
+            </h2>
 
-
-    <div class="intro">
-
-        <div class="quote">
-            ❝
         </div>
 
-        <p>
-            Sambutan Maulidur Rasul merupakan satu wadah untuk
-            memperingati kelahiran junjungan besar Nabi Muhammad
-            ﷺ serta menyemai rasa cinta kepada Baginda dalam
-            kalangan warga sekolah.
-        </p>
+
+        <div class="intro">
+
+            <div class="intro-mark">❝</div>
+
+            <p>
+                Sambutan Maulidur Rasul merupakan satu wadah untuk
+                memperingati kelahiran junjungan besar Nabi Muhammad
+                SAW serta menghayati perjuangan, akhlak dan keperibadian
+                Baginda sebagai contoh ikutan umat Islam.
+            </p>
+
+            <br>
+
+            <p>
+                Program ini melibatkan semua murid perdana Tahun 1
+                hingga Tahun 6 melalui aktiviti perarakan, pertandingan
+                sepanduk dan ceramah agama.
+            </p>
+
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- OBJEKTIF -->
+<!-- =========================
+     HIGHLIGHTS
+========================= -->
+
+<section class="highlight">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span style="color:#f1d17a">
+                FOKUS PROGRAM
+            </span>
+
+            <h2 style="color:white">
+                Tiga Pengisian Utama
+            </h2>
+
+        </div>
+
+
+        <div class="highlight-grid">
+
+            <div class="highlight-card">
+
+                <div class="number">01</div>
+
+                <h3>Perarakan</h3>
+
+                <p>
+                    Perarakan Maulidur Rasul sekitar
+                    Perkampungan Sungai Isap Murni.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-card">
+
+                <div class="number">02</div>
+
+                <h3>Pertandingan Sepanduk</h3>
+
+                <p>
+                    8 kumpulan Kelab & Persatuan Kokurikulum
+                    Tahap 2 menghasilkan sepanduk bertemakan
+                    Maulidur Rasul.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-card">
+
+                <div class="number">03</div>
+
+                <h3>Ceramah</h3>
+
+                <p>
+                    Ceramah khas bertajuk
+                    “Rasulullah Idola Sepanjang Zaman”.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     OBJEKTIF
+========================= -->
 
 <section>
 
-    <div class="section-title">
+    <div class="container">
 
-        <span>OBJEKTIF PROGRAM</span>
+        <div class="section-title">
 
-        <h2>
-            Menghayati Sirah & Sunnah
-        </h2>
+            <span>OBJEKTIF</span>
 
-    </div>
-
-
-    <div class="cards">
-
-        <div class="card">
-
-            <div class="icon">
-                🕌
-            </div>
-
-            <h3>
-                Mencintai Rasulullah ﷺ
-            </h3>
-
-            <p>
-                Memupuk rasa kasih dan cinta kepada
-                junjungan Nabi Muhammad ﷺ.
-            </p>
+            <h2>
+                Membentuk Generasi Cinta Rasul
+            </h2>
 
         </div>
 
 
-        <div class="card">
+        <div class="cards">
 
-            <div class="icon">
-                📖
+            <div class="card">
+
+                <div class="card-icon">❤️</div>
+
+                <h3>
+                    Cinta Rasulullah ﷺ
+                </h3>
+
+                <p>
+                    Meningkatkan kecintaan terhadap Nabi Muhammad SAW.
+                </p>
+
             </div>
 
-            <h3>
-                Menghayati Sirah
-            </h3>
 
-            <p>
-                Mengenali perjuangan dan akhlak
-                mulia Rasulullah ﷺ.
-            </p>
+            <div class="card">
 
-        </div>
+                <div class="card-icon">📖</div>
 
+                <h3>
+                    Menghayati Sirah
+                </h3>
 
-        <div class="card">
+                <p>
+                    Mencontohi akhlak dan keperibadian Rasulullah SAW
+                    dalam kehidupan seharian.
+                </p>
 
-            <div class="icon">
-                ❤️
             </div>
 
-            <h3>
-                Mengamalkan Sunnah
-            </h3>
 
-            <p>
-                Membudayakan akhlak dan sunnah
-                Rasulullah dalam kehidupan.
-            </p>
+            <div class="card">
+
+                <div class="card-icon">🤝</div>
+
+                <h3>
+                    Membina Ukhuwah
+                </h3>
+
+                <p>
+                    Meningkatkan semangat kerjasama dan kreativiti
+                    melalui aktiviti berkumpulan.
+                </p>
+
+            </div>
 
         </div>
 
@@ -554,135 +1345,267 @@ footer p {
 </section>
 
 
-<!-- TENTATIF -->
+<!-- =========================
+     TENTATIF
+========================= -->
 
 <section id="tentatif">
 
-    <div class="section-title">
+    <div class="container">
 
-        <span>JADUAL PROGRAM</span>
+        <div class="section-title">
 
-        <h2>
-            Tentatif
-        </h2>
+            <span>JADUAL PROGRAM</span>
 
-    </div>
+            <h2>
+                Tentatif & Aktiviti
+            </h2>
+
+            <p>
+                Aktiviti persediaan dan acara utama Sambutan
+                Maulidur Rasul 1448H / 2026M.
+            </p>
+
+        </div>
 
 
-    <div class="schedule">
+        <div class="timeline">
 
-        <div class="item">
 
-            <div class="time">
-                7:30 PAGI
+            <!-- 26 AUGUST -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+                    26 OGOS 2026<br>
+                    12.00 – 1.30 T/HARI
+                </div>
+
+                <div class="timeline-content">
+
+                    <strong>
+                        🎨 Membina Sepanduk
+                    </strong>
+
+                    <p>
+                        Pembinaan sepanduk mengikut kumpulan
+                        Kelab & Persatuan Kokurikulum.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div>
-                <strong>
-                    Kehadiran Murid & Guru
-                </strong>
 
-                <p>
-                    Semua warga sekolah berkumpul di lokasi program.
-                </p>
+            <!-- 27 AUGUST -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+                    27 OGOS 2026<br>
+                    7.30 – 8.30 PAGI
+                </div>
+
+                <div class="timeline-content">
+
+                    <strong>
+                        🎨 Sambungan Membina Sepanduk
+                    </strong>
+
+                    <p>
+                        Persediaan dan penyempurnaan sepanduk
+                        setiap kumpulan Kelab & Persatuan Kokurikulum.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 8 SEPT -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+                    7.30 – 7.50 PAGI
+                </div>
+
+                <div class="timeline-content">
+
+                    <strong>
+                        Kehadiran Murid & Pengambilan Kehadiran
+                    </strong>
+
+                    <p>
+                        Murid berkumpul mengikut kelas masing-masing
+                        dan guru kelas mengambil kehadiran.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+                    7.50 – 8.00 PAGI
+                </div>
+
+                <div class="timeline-content">
+
+                    <strong>
+                        Taklimat & Persediaan Perarakan
+                    </strong>
+
+                    <p>
+                        Taklimat keselamatan, persediaan dan
+                        susunan kumpulan perarakan.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+                    8.00 – 8.20 PAGI
+                </div>
+
+                <div class="timeline-content">
+
+                    <strong>
+                        🥁 Perarakan Maulidur Rasul
+                    </strong>
+
+                    <p>
+                        Perarakan sekitar Perkampungan
+                        Sungai Isap Murni sejauh lebih kurang 1.2 km.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+                    8.20 – 8.50 PAGI
+                </div>
+
+                <div class="timeline-content">
+
+                    <strong>
+                        Rehat & Persediaan Ceramah
+                    </strong>
+
+                    <p>
+                        Murid berkumpul dan membuat persediaan
+                        untuk sesi ceramah.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+                    9.00 – 10.00 PAGI
+                </div>
+
+                <div class="timeline-content">
+
+                    <strong>
+                        🎙️ Ceramah Maulidur Rasul
+                    </strong>
+
+                    <p>
+                        “Rasulullah Idola Sepanjang Zaman”
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-time">
+                    10.00 PAGI
+                </div>
+
+                <div class="timeline-content">
+
+                    <strong>
+                        Majlis Bersurai
+                    </strong>
+
+                    <p>
+                        Program tamat.
+                    </p>
+
+                </div>
+
             </div>
 
         </div>
 
 
-        <div class="item">
+        <!-- SPECIAL DATES -->
 
-            <div class="time">
-                8:00 PAGI
-            </div>
+        <div class="special-dates">
 
-            <div>
-                <strong>
-                    Perarakan Maulidur Rasul
-                </strong>
+            <div class="date-card">
 
-                <p>
-                    Perarakan dan selawat bersama warga sekolah.
-                </p>
-            </div>
+                <div class="date">
+                    26 OGOS
+                </div>
 
-        </div>
-
-
-        <div class="item">
-
-            <div class="time">
-                8:30 PAGI
-            </div>
-
-            <div>
-                <strong>
-                    Bacaan Selawat & Marhaban
-                </strong>
+                <h3>
+                    Membina Sepanduk
+                </h3>
 
                 <p>
-                    Pengisian kerohanian dan selawat.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="item">
-
-            <div class="time">
-                9:00 PAGI
-            </div>
-
-            <div>
-                <strong>
-                    Ceramah Maulidur Rasul
-                </strong>
-
-                <p>
-                    Ceramah khas sempena sambutan Maulidur Rasul.
+                    12.00 tengah hari – 1.30 petang
                 </p>
 
             </div>
 
-        </div>
 
+            <div class="date-card">
 
-        <div class="item">
+                <div class="date">
+                    8 SEPT
+                </div>
 
-            <div class="time">
-                10:30 PAGI
+                <h3>
+                    Hari Sambutan
+                </h3>
+
+                <p>
+                    7.30 pagi – 10.00 pagi
+                </p>
+
             </div>
 
-            <div>
 
-                <strong>
+            <div class="date-card">
+
+                <div class="date">
+                    11 SEPT
+                </div>
+
+                <h3>
                     Penyampaian Hadiah
-                </strong>
+                </h3>
 
                 <p>
-                    Penyampaian hadiah dan penghargaan.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="item">
-
-            <div class="time">
-                11:00 PAGI
-            </div>
-
-            <div>
-
-                <strong>
-                    Majlis Penutup
-                </strong>
-
-                <p>
-                    Penutup dan sesi bergambar.
+                    3 sepanduk terbaik + 5 saguhati
                 </p>
 
             </div>
@@ -694,115 +1617,273 @@ footer p {
 </section>
 
 
-<!-- QUOTE -->
+<!-- =========================
+     PENCERAMAH
+========================= -->
 
-<section class="quote-section">
+<section class="speaker-section" id="penceramah">
 
-    <h2>
-        رَسُولُ اللَّهِ ﷺ
-    </h2>
+    <div class="container">
 
-    <p>
-        "Sesungguhnya aku diutuskan untuk menyempurnakan
-        kemuliaan akhlak."
-    </p>
+        <div class="section-title">
+
+            <span>PENGISIAN ILMIAH</span>
+
+            <h2>
+                Ceramah Maulidur Rasul
+            </h2>
+
+        </div>
+
+
+        <div class="speaker">
+
+
+            <div>
+
+                <img
+                    src="penceramah.png"
+                    class="poster"
+                    alt="Poster Penceramah Maulidur Rasul"
+                    onclick="openModal()"
+                >
+
+                <div class="click-poster">
+                    🔍 Klik poster untuk paparan penuh
+                </div>
+
+            </div>
+
+
+            <div class="speaker-info">
+
+                <span>
+                    PENCERAMAH JEMPUTAN
+                </span>
+
+                <h2>
+                    Rasulullah<br>
+                    Idola Sepanjang Zaman
+                </h2>
+
+                <div class="speaker-title">
+                    Ceramah Khas Maulidur Rasul
+                </div>
+
+                <p>
+                    Ceramah akan memberi penekanan kepada sirah
+                    Rasulullah SAW, akhlak dan keperibadian Baginda
+                    serta peranan murid sebagai generasi yang
+                    mencontohi akhlak Rasulullah SAW.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- AJK -->
+<!-- =========================
+     AJK
+========================= -->
 
 <section id="ajk">
 
-    <div class="section-title">
+    <div class="container">
 
-        <span>
-            PENGURUSAN PROGRAM
-        </span>
+        <div class="section-title">
 
-        <h2>
-            Jawatankuasa
-        </h2>
+            <span>PENGURUSAN PROGRAM</span>
 
-    </div>
-
-
-    <div class="committee">
-
-        <div class="person">
-
-            <strong>
-                Penasihat
-            </strong>
-
-            <span>
-                Guru Besar
-            </span>
+            <h2>
+                Jawatankuasa Pelaksana
+            </h2>
 
         </div>
 
 
-        <div class="person">
-
-            <strong>
-                Pengerusi
-            </strong>
-
-            <span>
-                PK Pentadbiran
-            </span>
-
-        </div>
+        <div class="ajk-container">
 
 
-        <div class="person">
+            <div class="ajk-group">
 
-            <strong>
-                Naib Pengerusi
-            </strong>
-
-            <span>
-                PK Kokurikulum
-            </span>
-
-        </div>
+                <div class="ajk-group-title">
+                    PENGURUSAN UTAMA
+                </div>
 
 
-        <div class="person">
-
-            <strong>
-                Setiausaha
-            </strong>
-
-            <span>
-                Nama Guru
-            </span>
-
-        </div>
+                <div class="ajk-row">
+                    <div class="ajk-role">Penasihat</div>
+                    <div class="ajk-name">
+                        En. Safrul Kamalizam bin Safar
+                    </div>
+                </div>
 
 
-        <div class="person">
-
-            <strong>
-                Bendahari
-            </strong>
-
-            <span>
-                Nama Guru
-            </span>
-
-        </div>
+                <div class="ajk-row">
+                    <div class="ajk-role">Pengerusi</div>
+                    <div class="ajk-name">
+                        En. Hassan bin Ahmad
+                    </div>
+                </div>
 
 
-        <div class="person">
+                <div class="ajk-row">
+                    <div class="ajk-role">Naib Pengerusi 1</div>
+                    <div class="ajk-name">
+                        Pn. Norlaila binti Jusoh
+                    </div>
+                </div>
 
-            <strong>
-                AJK Pelaksana
-            </strong>
 
-            <span>
-                Guru & Kakitangan
-            </span>
+                <div class="ajk-row">
+                    <div class="ajk-role">Naib Pengerusi 2</div>
+                    <div class="ajk-name">
+                        En. Mohd Rassidi bin Saini
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">Penyelaras Program</div>
+                    <div class="ajk-name">
+                        En. Fakhrul Anwar bin Ihyauddeen
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">Bendahari</div>
+                    <div class="ajk-name">
+                        Cik Norfiza binti Abdullah Omar
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="ajk-group">
+
+                <div class="ajk-group-title">
+                    JAWATANKUASA PELAKSANA
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">Perarakan</div>
+                    <div class="ajk-name">
+                        En. Hatim bin Zulkifli
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">
+                        Keselamatan & Kawalan Laluan
+                    </div>
+
+                    <div class="ajk-name">
+                        En. Mohd Ramdzan bin Mohd Zain<br>
+                        Semua Guru Kelas
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">
+                        Sepanduk & Pertandingan
+                    </div>
+
+                    <div class="ajk-name">
+                        En. Fakhrul Anwar bin Ihyauddeen
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">
+                        Penghakiman
+                    </div>
+
+                    <div class="ajk-name">
+                        Ketua Panitia & Semua Ahli Panitia PSV
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">
+                        Persiapan Tempat
+                    </div>
+
+                    <div class="ajk-name">
+                        Pn. Norsyafikah binti Abd Wahab<br>
+                        Pn. Zamzarina binti Abdul Samad<br>
+                        En. Aben Lee A/L Lee Lim<br>
+                        Cik Nurul Syafiqah binti Mohd Aris
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">
+                        Siar Raya
+                    </div>
+
+                    <div class="ajk-name">
+                        En. Ahmad Fadzil bin Abdullah
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">
+                        Fotografi
+                    </div>
+
+                    <div class="ajk-name">
+                        Pn. Wan Nur Surya bt Wan Rahin<br>
+                        Pn. Nur Athirah binti Rosmadi
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">
+                        Dokumentasi
+                    </div>
+
+                    <div class="ajk-name">
+                        En. Fakhrul Anwar bin Ihyauddeen
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">
+                        Hadiah & Cenderamata
+                    </div>
+
+                    <div class="ajk-name">
+                        En. Fakhrul Anwar bin Ihyauddeen
+                    </div>
+                </div>
+
+
+                <div class="ajk-row">
+                    <div class="ajk-role">
+                        Kecemasan / Pertolongan Cemas
+                    </div>
+
+                    <div class="ajk-name">
+                        En. Azuwan bin Mohamad
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
@@ -811,27 +1892,208 @@ footer p {
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     SAFETY
+========================= -->
+
+<section class="safety">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>KESELAMATAN</span>
+
+            <h2>
+                Keselamatan Diutamakan
+            </h2>
+
+        </div>
+
+
+        <div class="safety-list">
+
+
+            <div class="safety-item">
+                <div class="safety-icon">✓</div>
+                Laluan perarakan dikenal pasti dan disemak terlebih dahulu.
+            </div>
+
+
+            <div class="safety-item">
+                <div class="safety-icon">✓</div>
+                Guru ditempatkan di bahagian hadapan, tengah dan belakang kumpulan.
+            </div>
+
+
+            <div class="safety-item">
+                <div class="safety-icon">✓</div>
+                Murid bergerak mengikut kumpulan dan tidak dibenarkan berlari atau meninggalkan kumpulan.
+            </div>
+
+
+            <div class="safety-item">
+                <div class="safety-icon">✓</div>
+                Kit pertolongan cemas disediakan sepanjang program.
+            </div>
+
+
+            <div class="safety-item">
+                <div class="safety-icon">✓</div>
+                Murid yang kurang sihat tidak dipaksa menyertai perarakan.
+            </div>
+
+
+            <div class="safety-item">
+                <div class="safety-icon">✓</div>
+                Sekiranya berlaku cuaca buruk, aktiviti luar disesuaikan mengikut keadaan.
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MAKLUMAT
+========================= -->
+
+<section id="maklumat">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>MAKLUMAT PROGRAM</span>
+
+            <h2>
+                Maklumat Utama
+            </h2>
+
+        </div>
+
+
+        <div class="location">
+
+            <div class="location-card">
+
+                <div style="font-size:45px;">
+                    📍
+                </div>
+
+                <h3>
+                    SK Sungai Isap Murni
+                </h3>
+
+                <p>
+                    25150 Kuantan, Pahang
+                </p>
+
+                <br>
+
+                <p>
+                    Program turut melibatkan laluan sekitar
+                    Perkampungan Sungai Isap Murni.
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=SK+Sungai+Isap+Murni+Kuantan"
+                    target="_blank"
+                    class="map-btn"
+                >
+                    📍 Buka Google Maps
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
-    <h2>
+    <div class="footer-arabic">
         ﷺ
+    </div>
+
+    <h2>
+        SAMBUTAN MAULIDUR RASUL
     </h2>
 
     <p>
-        SAMBUTAN MAULIDUR RASUL
+        1448H / 2026M
     </p>
 
-    <p>
-        TAHUN 1446H / 2026M
+    <p style="margin-top:8px;">
+        “MADANI Dihayati, Ummah Diberkati”
     </p>
 
-    <p>
-        SK Sungai Isap Murni
+    <p style="margin-top:20px;">
+        SK Sungai Isap Murni · Kuantan
     </p>
 
 </footer>
+
+
+<!-- =========================
+     POSTER MODAL
+========================= -->
+
+<div class="modal" id="posterModal">
+
+    <div
+        class="modal-close"
+        onclick="closeModal()"
+    >
+        ×
+    </div>
+
+    <img
+        src="penceramah.png"
+        alt="Poster Penceramah"
+    >
+
+</div>
+
+
+<script>
+
+function openModal() {
+
+    document.getElementById("posterModal").style.display = "flex";
+
+}
+
+function closeModal() {
+
+    document.getElementById("posterModal").style.display = "none";
+
+}
+
+
+/* Close when clicking outside poster */
+
+document
+    .getElementById("posterModal")
+    .addEventListener("click", function(e) {
+
+        if (e.target === this) {
+            closeModal();
+        }
+
+    });
+
+</script>
 
 
 </body>
